@@ -3,8 +3,8 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { RouterModule, Routes } from '@angular/router';
-// import { AppRoutes } from './routes';
-import { IndexPageComponent } from './index-page/index-page.component';
+import { IndexPageComponent } from './pages/index-page/index-page.component';
+import { ForumListComponent } from './parts/forum-list/forum-list.component';
 
 export const AppRoutes: Routes = [
   { path: '', component: IndexPageComponent }
@@ -14,6 +14,7 @@ export const AppRoutes: Routes = [
   declarations: [
     AppComponent,
     IndexPageComponent,
+    ForumListComponent,
   ],
   imports: [
     BrowserModule,
